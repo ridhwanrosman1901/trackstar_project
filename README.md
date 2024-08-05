@@ -124,6 +124,3 @@ This basic version focuses on essential functionalities while keeping the comple
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
-
-This `README.md` file provides a clear overview of the project, including setup instructions, usage guidelines, and a summary of the features and technologies used. You can customize it further based on your specific project details and team preferences.W
