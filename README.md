@@ -1,4 +1,4 @@
-# Staff Performance Tracking Website
+# Awesome Staff Performance Tracking Website
 
 ## Introduction
 This project is a web-based application designed to help managers and employees within a company track performance metrics such as KPIs, attendance, and overall work performance. The basic version of this project includes core functionalities and is designed to be simple yet effective for basic performance tracking needs.
