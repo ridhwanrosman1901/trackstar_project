@@ -3,12 +3,13 @@
 ## Introduction
 This project is a web-based application designed to help managers and employees within a company track performance metrics such as KPIs, attendance, and overall work performance. The basic version of this project includes core functionalities and is designed to be simple yet effective for basic performance tracking needs.
 
+
 ## Features
-- User authentication with role-based access (manager and employee)
-- KPI management (add, edit, view KPIs)
-- Attendance logging and viewing
-- Monthly performance reports
-- User profile management
+- **User Authentication**: Secure login and registration with JWT.
+- **Role-Based Access**: Different views for managers and employees.
+- **KPI Management**: Add, edit, and view KPIs.
+- **Attendance Tracking**: Log and review attendance records.
+- **Performance Reports**: Generate and view monthly performance reports.
 
 ## Technologies Used
 - **Frontend**: React.js
@@ -17,106 +18,140 @@ This project is a web-based application designed to help managers and employees 
 - **Authentication**: JWT (JSON Web Tokens)
 - **Styling**: CSS or Bootstrap
 
-## Usage
-After setting up and starting the servers, open your browser and navigate to `http://localhost:3000` to access the application.
 
-- **Register/Login**: Create a new account or log in with an existing one.
-- **Dashboard**: View key performance metrics and navigate to other sections.
-- **KPI Management**: Add, edit, and view KPIs.
-- **Attendance**: Log and view attendance records.
-- **Performance Reports**: View and download monthly performance reports.
-- **Profile**: Manage your personal information and view performance summaries.
+## Usage
+1. **Visit the Landing Page**
+   - Access the landing page at `http://localhost:3000` and navigate through the site.
+
+2. **Register and Log In**
+   - Create a new account and log in. Make sure to select the appropriate role (manager or employee).
+
+3. **Use the Dashboard**
+   - Access your personalized dashboard to view KPIs, attendance, and performance reports.
+
+4. **Manage KPIs**
+   - Managers can add, edit, and view KPIs.
+
+5. **Log Attendance**
+   - Employees can log their attendance daily.
+
+6. **View Reports**
+   - Generate and view monthly performance reports.
 
 ## Pages
-1. **Home/Dashboard Page**: Overview of KPIs, performance metrics, and quick links to other sections.
-2. **Login/Registration Page**: Forms for user authentication and account creation.
-3. **User Profile Page**: Personal information and performance summary.
-4. **KPI Management Page**: Interface for adding, editing, and viewing KPIs.
-5. **Attendance Page**: Log and view attendance records.
-6. **Performance Reports Page**: View and download monthly performance reports.
-7. **Feedback Page (Optional)**: Interface for providing and viewing feedback (if implemented).
+1. **Landing Page**
+   - Introduction to the system with key features and call-to-action buttons.
+2. **Home/Dashboard Page**
+   - Overview of key metrics and quick links to other sections.
+3. **Login/Registration Page**
+   - User authentication with role selection during registration.
+4. **User Profile Page**
+   - Personal information and performance summary.
+5. **KPI Management Page**
+   - Create, edit, and view KPIs.
+6. **Attendance Page**
+   - Log and view attendance records.
+7. **Performance Reports Page**
+   - Generate and view monthly performance reports.
 
-## Contributing
-Contributions are welcome! Please follow these steps to contribute:
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/YourFeature`).
-3. Commit your changes (`git commit -m 'Add some feature'`).
-4. Push to the branch (`git push origin feature/YourFeature`).
-5. Open a pull request.
+### Outline for the Pages (Admin and User)
 
-Great! Here’s a refined outline for the Basic Version of your project, focusing on simplicity while covering essential functionalities:
+#### 1. Landing Page (Common)
+- **Introduction**: Brief overview of the staff performance tracking system.
+- **Features**: Highlight key features such as KPI tracking, attendance monitoring, and performance reporting.
+- **Call to Action**: Buttons for login and registration.
+- **Navigation**: Links to other informational pages (e.g., About, Contact).
 
-### Basic Version (5-7 Pages)
+#### 2. Home/Dashboard Page
+- **Admin View**:
+  - **Overview**: Display team performance metrics, attendance summary, and key alerts.
+  - **Quick Links**: Access KPI Management, Attendance Records, Performance Reports, User Management.
+  - **Analytics**: Graphs and charts for overall performance trends.
+- **User View**:
+  - **Overview**: Display personal performance metrics, attendance summary, and key alerts.
+  - **Quick Links**: Access Personal KPIs, Attendance Log, Performance Reports.
+  - **Goal Tracking**: Visual representation of progress towards personal goals.
 
-#### 1. Home/Dashboard Page
-- **Overview**: Display key metrics, such as KPIs, attendance summary, and performance highlights.
-- **Quick Links**: Access other sections like KPI Management, Attendance, and Performance Reports.
+#### 3. Login/Registration Page (Common)
+- **User Authentication**: Forms for user registration and login.
+- **Role Selection**: Ensure users are identified as either admins or regular users during registration.
+- **Forgot Password**: Option to reset password.
 
-#### 2. Login/Registration Page
-- **User Authentication**: Allow users to register and log in.
-- **Role Selection**: Ensure users are identified as either managers or employees during registration.
+#### 4. User Profile Page
+- **Admin View**:
+  - **Admin Information**: Display admin details and privileges.
+  - **Team Overview**: Summary of team members' performance and attendance.
+- **User View**:
+  - **Personal Information**: Display user details and performance summary.
+  - **Edit Profile**: Option for users to update their personal information.
 
-#### 3. User Profile Page
-- **Personal Information**: Display user details and role-specific information.
-- **Performance Summary**: Quick overview of personal performance metrics.
+#### 5. KPI Management Page
+- **Admin View**:
+  - **Add/Edit KPIs**: Forms to create and modify KPIs for the team.
+  - **View KPIs**: List of all KPIs with filtering options.
+  - **Assign KPIs**: Ability to assign KPIs to specific users.
+- **User View**:
+  - **View Personal KPIs**: Display KPIs assigned to the user with details and progress tracking.
+  - **Update Progress**: Option for users to update their progress on assigned KPIs.
 
-#### 4. KPI Management Page
-- **Add/Edit KPIs**: Allow users to create and modify KPIs.
-- **View KPIs**: Display a list of current KPIs with relevant details.
+#### 6. Attendance Page
+- **Admin View**:
+  - **Log Attendance**: Ability to log attendance for team members.
+  - **View Attendance Records**: Detailed list of attendance records for all users with filtering options.
+- **User View**:
+  - **Log Attendance**: Simple form for users to log their own attendance.
+  - **View Personal Attendance**: List of personal attendance records.
 
-#### 5. Attendance Page
-- **Log Attendance**: Simple form for employees to log their attendance.
-- **View Attendance**: List of attendance records for users to review.
+#### 7. Performance Reports Page
+- **Admin View**:
+  - **Generate Reports**: Tools to generate comprehensive performance reports for the team.
+  - **View Reports**: List of all generated reports with download options.
+  - **Analytics**: Advanced data visualization tools for performance analysis.
+- **User View**:
+  - **View Personal Reports**: Display monthly performance reports for the user.
+  - **Download Reports**: Option to download personal performance reports in PDF format.
 
-#### 6. Performance Reports Page
-- **View Reports**: Display monthly performance reports.
-- **Download Reports**: Option to download reports in PDF format.
-
-#### 7. Feedback Page (Optional)
-- **Provide Feedback**: Allow managers to give feedback to employees.
-- **View Feedback**: Employees can view feedback received from managers.
+#### 8. User Management Page (Admin Only)
+- **User List**: Display a list of all users with their roles and statuses.
+- **Add/Edit Users**: Forms to add new users or edit existing user details.
+- **Manage Roles**: Ability to assign or change user roles (admin or regular user).
 
 ### Implementation Plan
 
-#### 1. Setup and Configuration
-- **Initialize Project**: Set up a new MERN stack project.
-- **Database Setup**: Configure MongoDB to store user data, KPIs, attendance, and reports.
+#### 1. Landing Page
+- **Design and Develop**: Create a visually appealing landing page with essential information and navigation.
 
 #### 2. User Authentication
-- **Registration/Login**: Implement user registration and login with JWT for authentication.
-- **Role-Based Access**: Ensure different views for managers and employees.
+- **Implement Registration/Login**: Set up JWT authentication for secure login and registration.
+- **Role-Based Access Control**: Ensure role-specific navigation and access to features.
 
-#### 3. KPI Management
-- **Schema Design**: Define MongoDB schema for storing KPIs.
+#### 3. Home/Dashboard Page
+- **Admin and User Views**: Implement conditional rendering to display appropriate data and controls based on the user role.
+
+#### 4. KPI Management
+- **Schema Design**: Define MongoDB schema for storing KPI data.
 - **API Endpoints**: Create CRUD operations for KPIs.
-- **Frontend Forms**: Develop forms to add, edit, and view KPIs in React.
+- **Frontend Implementation**: Develop forms and lists for KPI management, with role-based access control.
 
-#### 4. Attendance Tracking
+#### 5. Attendance Tracking
 - **Schema Design**: Define schema for attendance records.
 - **API Endpoints**: Create endpoints for logging and retrieving attendance data.
-- **Frontend Forms**: Develop simple forms for logging and viewing attendance.
+- **Frontend Forms**: Develop forms for logging and viewing attendance, with conditional rendering for different roles.
 
-#### 5. Performance Reports
-- **Generate Reports**: Implement logic to generate monthly performance reports.
-- **API Endpoints**: Create an endpoint to retrieve reports.
-- **Frontend Display**: Develop a page to view and download reports.
+#### 6. Performance Reports
+- **Generate and View Reports**: Implement logic to generate and display performance reports with appropriate access control.
 
-#### 6. Dashboard
-- **Overview Display**: Create a React component to display key metrics and quick links.
-- **Data Integration**: Fetch data from various endpoints to populate the dashboard.
-
-#### 7. Feedback (Optional)
-- **Schema Design**: Define schema for feedback.
-- **API Endpoints**: Create endpoints for providing and viewing feedback.
-- **Frontend Forms**: Develop forms for managers to give feedback and employees to view it.
+#### 7. User Management (Admin Only)
+- **Admin Tools**: Develop tools for admins to manage user accounts and roles.
 
 ### Technologies and Tools
 
-- **Frontend**: React.js
-- **Backend**: Node.js with Express.js
-- **Database**: MongoDB
-- **Authentication**: JWT (JSON Web Tokens)
-- **Styling**: CSS or a framework like Bootstrap
+- **Frontend**: React.js with role-based conditional rendering.
+- **Backend**: Node.js with Express.js for API development.
+- **Database**: MongoDB for storing user data, KPIs, attendance records, and reports.
+- **Authentication**: JWT (JSON Web Tokens) for secure user authentication.
+- **Styling**: CSS or a framework like Bootstrap for a responsive and user-friendly interface.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+### Conclusion
+
+This outline provides a structured approach to developing the staff performance tracking website with distinct interfaces for admins and regular users. By focusing on essential functionalities and leveraging the MERN stack, you can create an effective tool for tracking and improving staff performance.
