@@ -3,7 +3,7 @@ import Report from '../models/Report.js';
 
 const router = express.Router();
 
-// Define your routes
+// Define routes
 router.get('/', async (req, res) => {
   try {
     const reports = await Report.find();

@@ -3,8 +3,7 @@ import Attendance from '../models/Attendance.js';
 
 const router = express.Router();
 
-// Add your routes here
-// For example:
+// Define Routes
 router.get('/', async (req, res) => {
   try {
     const attendances = await Attendance.find();
